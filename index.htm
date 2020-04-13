@@ -1,0 +1,220 @@
+<!DOCTYPRE html>
+<html>
+<head>
+<style>
+.accordion {
+	font-family:courier new;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: rgba(255,255,255,0.3);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+body {
+	font-family:courier new;
+	background-color:#F5FFFA
+}
+a {
+	font-family:courier new;
+	font-size:150%;
+}
+p {
+	font-size:125%;
+}
+.center {
+	margin: 0 auto;
+	display: block;
+}
+.image-slider {
+	position:relative;
+	display: inline-block;
+	line-height: 0;
+}
+.image-slider > div {
+	position: absolute;
+	top: 0; bottom: 0; left: 0;
+	width: 25px;
+	max-width: 100%;
+	overflow: hidden;
+	resize: horizontal;
+}
+.image-slider > div:before {
+	content: '';
+	position: absolute;
+	right: 0; bottom: 0;
+	width: 13px; height: 13px;
+	padding: 5px;
+	background: linear-gradient(-45deg, white 50%, transparent 0);
+	background-clip: content-box;
+	cursor: ew-resize;
+	-webkit-filter: drop-shadow(0 0 2px black);
+	filter: drop-shadow(0 0 2px black);
+}
+
+.image-slider img {
+	user-select: none;
+	max-width: 500px;
+}
+</style>
+</head>
+<body>
+
+<h1 style="
+font-size:500%;
+text-align:center"><u>my works</u></h1>
+<p>I have an interest in mutiple areas. Here are some of my works from the past:</p>
+
+<br>
+<button class="accordion">photography.</button>
+<div class="panel">
+  <p>I don't have a DSLR but I do like capturing moments with my smartphone. As much as possible, I avoid using filters.</p>
+	<img src="https://drive.google.com/uc?id=1hnOcmRicmcxDfmWkv7gfiKAeB7yc2vC_" alt="women" style="width:75%" class="center">
+  <br>
+	<img src="https://drive.google.com/uc?id=1FYsp8DgTuKffxPgnHMH1DNlTLE2LTh0G" alt="kid" style="width:75%" class="center">
+  <br>
+	<img src="https://drive.google.com/uc?id=1ZL0He7x9hgT-50oPaPlJ4i4Y-TdID-gS" alt="hiking" style="width:75%" class="center">
+  <br>
+	<img src="https://drive.google.com/uc?id=15k4imHsiDFcSwUdUCXzbEt9pD3mb6_BE" alt="home" style="width:75%" class="center">
+  <br>
+</div>
+
+<button class="accordion">photo manipulation.</button>
+<div class="panel">
+  <p>One application that I am very fond of is Photoshop. I like to tinkle around with its features. It's satisfying to see what I can do with just a click of a button.</p>
+	<div align="middle">
+		<div class="image-slider">
+			<div><img src="https://drive.google.com/uc?id=1G6CmjFwXK3ddJqGeCJ4-JFP4E8CmkRrf" /></div>
+			<img src="https://drive.google.com/uc?id=1gikfsVWEI_c_yG0eplWBsZQxZyrIR8rX" />
+		</div>
+	</div>
+<br>
+	<div align="middle">
+		<div class="image-slider">
+			<div><img src="https://drive.google.com/uc?id=1Zv6Twqrm2XCiZH06JunI3-gJGobMcrOw" /></div>
+			<img src="https://drive.google.com/uc?id=1Cmqy-qgkaSjMqlo3MXG-j_QsenTn5T5-" />
+		</div>
+	</div>
+<br>
+	<div align="middle">
+		<div class="image-slider">
+			<div><img src="https://drive.google.com/uc?id=1GR18eu1tBktJbUdJymBIfJSoMoWAsJNQ" /></div>
+			<img src="https://drive.google.com/uc?id=1EIIu-0QXmWxwwF8kjBNcH49HEjNsgJ6j" />
+		</div>
+	</div>  
+<br>
+	<div align="middle">
+		<div class="image-slider">
+			<div><img src="https://drive.google.com/uc?id=1L91AlUA2sZtNKlgA9KKhyWwYBFLix8ek" /></div>
+			<img src="https://drive.google.com/uc?id=1gK4lRTF9NYWRISWSUVLPtzWLTM-q61yW" />
+		</div>
+	</div>
+<br>
+	<div align="middle">
+		<div class="image-slider">
+			<div><img src="https://drive.google.com/uc?id=1kSlIVm3iYFbbv94EdxNqQjEynvW6W4Tp" /></div>
+			<img src="https://drive.google.com/uc?id=1C_H9yp6TPaNJYOEUwKGU-oyveaT7Ajhf" />
+		</div>
+	</div>
+<br>
+</div>
+
+<button class="accordion">videos.</button>
+<div class="panel">
+  <p>I have done some video editing for school projects. There are some rough spots but I can still make magic out of a very limited amount of time.</p>
+  <div align="middle">
+	<video width="75%" controls>
+	<source src="https://drive.google.com/uc?id=1Ir7ROySaDMn_E0g5pruJ2KGSgXEJ_2WU" type="video/mp4">
+	</video>
+  </div>
+  <h2 style="text-align:center">"TIIS"</h2>
+  <p>This video is a project that I made for our PE & Health course. I chose to raise awareness on pressuring students/children about academics. I have 
+  been a victim of this. I don't want others to feel the pain that I have been through.</p>
+  <br><br><br>
+  <div align="middle">
+	<video width="75%" controls>
+	<source src="https://drive.google.com/uc?id=11dcHoT0N0c_dj7OEdGeGr974cWtf36lP" type="video/mp4">
+	</video>
+  </div>
+  <h2 style="text-align:center">"Ang Kwento ng Nanay Ko"</h2>
+  <p>This video follows the story of my mother's first love. Put it simply, this is how she broke her heart, fell in love with another, and broke her 
+  heart again all in one day.</p>
+
+</div>
+
+<button class="accordion">research.</button>
+<div class="panel">
+  <p>A qualitative research on how assistive technology has helped children with intellectual abilities</p>
+  <a href="https://drive.google.com/open?id=1HL94ne0ZAH434nczc7GOEX949F-1ZUWf" target="_blank">Assistive Technology.</a>
+  <br>
+  <p>A capstone project on a doormat that can produce electrical charge through footstep</p>
+  <a href="https://drive.google.com/open?id=16BmbnV6SBGzoLflr_nwr07BCEGSdKsfI" target="_blank">Piezoelectric Doormat.</a>
+  <br>
+  <p>A case study on the relationship of color preference and personality</p>
+  <a href="https://drive.google.com/open?id=13CGqyRpczaTWkvkBpVIOV_qhAfgaMMQj" target="_blank">Color and Personality.</a>
+  <br>
+  <p>A system proposal for equipment and facilities reservation for CCDC</p>
+  <a href="https://drive.google.com/open?id=1oxww55LAtIcCQxkxv68aD3iBBc3M7NwX" target="_blank">Stand-alone App.</a>
+  <br>
+  <p>A modification of the Round Robin algorithm to improve throughput</p>
+  <a href="https://drive.google.com/open?id=18MXASkeuJS3PChCLCoUEZy7Lr5AD8maR" target="_blank">RR Modification.</a>
+  <br>
+  <p>An analysis of the modified RR base don time and space efficiency</p>
+  <a href="https://drive.google.com/open?id=1n551c-iMtqdZiMFXWpe0DX3rC33ZhMlw" target="_blank">Time and Space Efficiency.</a>
+  <br>
+  <p>A workbook on automata and behavioral equivalences</p>
+  <a href="https://drive.google.com/open?id=1S0YX6JWMW7XJB3AhmvslenQfaeyQA_MM" target="_blank">Workbook.</a>
+  <br>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+<br><br>
+<a href="homepage.htm">◄ back to homepage.</a>
+
+</body>
+</html>
